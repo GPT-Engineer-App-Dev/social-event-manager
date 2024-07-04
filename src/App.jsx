@@ -9,6 +9,7 @@ import Dashboard from "./pages/Dashboard.jsx";
 import Events from "./pages/Events.jsx";
 import Attendees from "./pages/Attendees.jsx";
 import SettingsPage from "./pages/Settings.jsx";
+import CreateEvent from "./pages/CreateEvent.jsx";
 
 const queryClient = new QueryClient();
 
@@ -33,6 +34,11 @@ export const navItems = [
     to: "/settings",
     icon: <Settings className="h-4 w-4" />,
   },
+  {
+    title: "Create Event",
+    to: "/create-event",
+    icon: <Calendar className="h-4 w-4" />,
+  },
 ];
 
 const App = () => {
@@ -48,6 +54,7 @@ const App = () => {
               <Route path="events" element={<Events />} />
               <Route path="attendees" element={<Attendees />} />
               <Route path="settings" element={<SettingsPage />} />
+              <Route path="create-event" element={<CreateEvent />} />
             </Route>
           </Routes>
         </Router>
