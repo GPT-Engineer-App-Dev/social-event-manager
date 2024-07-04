@@ -48,6 +48,10 @@ const Sidebar = () => (
               {item.title}
             </SidebarNavLink>
           ))}
+          <SidebarNavLink to="/create-event">
+            <Calendar className="h-4 w-4" />
+            Create Event
+          </SidebarNavLink>
         </nav>
       </div>
     </div>
